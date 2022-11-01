@@ -1,12 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello there</title>
-</head>
-<body>
-    <h1>Hello this is my first page </h1>
-</body>
-</html>
+<div class="container">
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+    <div class="header">
+        <navbar>
+            <ul>
+                <li>HOMe</li>
+                <li>About us</li>
+                <li>Help</li>
+            </ul>
+        </navbar>
+    </div>
+    <div class="body">
+        <div class="cardBody">
+            <style>
+                
+            </style>
+            <form action="">
+                <div class="d-none" id="hidden">you have login successfully</div>
+                <div>
+                    <label for="firstName">Enter Your FirstName</label>
+                    <input type="text">
+                </div><br>
+                <div>
+                    <label for="lastName">Enter your LastName</label>
+                    <input type="text">
+                </div><br>
+                <button type="submit" id="submit">Log In</button>
+                <button class="btn-cancel" type="button">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <!-- <script>
+        $(document).ready(function() {
+          $("div").click(function() {
+            alert("Hello, world!");
+            $('#submit').on('click', function (e) {
+            $('.hidden').removeClass('d-none');
+          });
+        });
+        // var action = document.getElementById('submit')
+        });
+            console.log(action);
+    </script> -->
+</div>
