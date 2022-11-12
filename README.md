@@ -1,6 +1,6 @@
 # Installation Guidelines :rocket:
 
-Welcome to our `Project` for installation you need to follow following steps.
+Welcome to our `Project` for installation you need to follow following steps. :cat:
 
 1. Navigate to the right directory where your project will be locally saved
 2. Clone this repository and move to `project_1` directory
