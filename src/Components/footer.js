@@ -3,12 +3,10 @@ import "../Scss_files/footer.css";
 
 function Footer() {
   return (
-        <Card className='copyright footer'>
-        © 2020 Copyright:
-        <a>
-          About us
-        </a>
-      </Card>
+    <Card className="copyright footer">
+      © 2020 Copyright:
+      <a>About us</a>
+    </Card>
   );
 }
 
