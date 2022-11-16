@@ -2,7 +2,6 @@ import { Container } from 'react-bootstrap';
 import "../Homepage/homepage.css";
 import { useMediaQuery } from 'react-responsive'
 
-
 function HomePage() {
     const isSmall = useMediaQuery({ query: '(max-width: 576px)' })
     if (isSmall) {
