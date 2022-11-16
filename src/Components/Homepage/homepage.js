@@ -3,8 +3,8 @@ import "../Homepage/homepage.css";
 import { useMediaQuery } from 'react-responsive'
 
 function HomePage() {
-    const isSmall = useMediaQuery({ query: '(max-width: 576px)' })
-    if (isSmall) {
+  const isSmall = useMediaQuery({ query: '(max-width: 576px)' })
+  if (isSmall) {
       return (
         <Container className="top-mob">
             <h1>Hire India's Top Remote Talent</h1>
@@ -12,7 +12,7 @@ function HomePage() {
             <p className='p-mob'>A network of 50,000+ talents, pre-vetted against their technical capabilities,language  proficiency and behaviral skills.</p>
         </Container>
     );
-} else {
+  } else {
     return (
     <Container className="align">
         <h1>Hire India's Top Remote Talent</h1>
