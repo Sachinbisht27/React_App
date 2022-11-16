@@ -9,7 +9,7 @@ function HomePage() {
         <Container className="top-mob">
             <h1>Hire India's Top Remote Talent</h1>
             <p className='p-mob'>A hiring platform that helps remote-first companies hire 10X faster &more efficiently.</p>
-            <p className='p-mob'>A network of 50,000+ talents, pre-vetted against their technical capabilities,language  proficiency and behaviral skills.</p>
+            <p className='p-mob'>A network of 50,000+ talents, pre-vetted against their technical capabilities,language  proficiency and behavioral skills.</p>
         </Container>
     );
   } else {
@@ -17,7 +17,7 @@ function HomePage() {
     <Container className="align">
         <h1>Hire India's Top Remote Talent</h1>
         <p>A hiring platform that helps remote-first companies hire 10X faster & more efficiently.</p>
-        <p>A network of 50,000+ talents, pre-vetted against their technical capabilities,language proficiency and behaviral skills.</p>
+        <p>A network of 50,000+ talents, pre-vetted against their technical capabilities,language proficiency and behavioral skills.</p>
     </Container>
       );
     }
