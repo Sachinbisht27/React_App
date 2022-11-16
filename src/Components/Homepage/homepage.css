@@ -1,0 +1,16 @@
+.align {
+    text-align: center;
+    margin-top: 185px;
+}
+.p{
+    margin-top: 20px;
+}
+
+/* css for Mobile */
+.top-mob {
+    text-align: center;
+    padding-top: 200px;
+}
+.p-mob{
+    font-size: 17px;
+}
