@@ -8,7 +8,7 @@ function HomePage() {
       return (
         <Container className="top-mob">
             <h1>Hire India's Top Remote Talent</h1>
-            <p className='p-mob'>A hiring platform that helps remote-first compaines hire 10X faster &more efficeintly.</p>
+            <p className='p-mob'>A hiring platform that helps remote-first companies hire 10X faster &more efficiently.</p>
             <p className='p-mob'>A network of 50,000+ talents, pre-vetted against their technical capabilities,language  proficiency and behavirol skills.</p>
         </Container>
     );
@@ -16,7 +16,7 @@ function HomePage() {
     return (
     <Container className="align">
         <h1>Hire India's Top Remote Talent</h1>
-        <p>A hiring platform that helps remote-first compaines hire 10X faster &more efficeintly.</p>
+        <p>A hiring platform that helps remote-first companies hire 10X faster & more efficiently.</p>
         <p>A network of 50,000+ talents, pre-vetted against their technical capabilities,language proficiency and behavirol skills.</p>
     </Container>
       );
