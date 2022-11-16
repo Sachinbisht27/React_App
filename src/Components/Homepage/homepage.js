@@ -16,7 +16,7 @@ function HomePage() {
     return (
     <Container className="align">
         <h1>Hire India's Top Remote Talent</h1>
-        <p>A hiring platform that helps remote-first companies hire 10X faster & more efficiently.</p>
+        <p>A Hiring platform that helps remote-first companies hire 10X faster & more efficiently.</p>
         <p>A network of 50,000+ talents, pre-vetted against their technical capabilities,language proficiency and behavioral skills.</p>
     </Container>
       );
