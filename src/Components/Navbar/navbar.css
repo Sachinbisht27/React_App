@@ -1,0 +1,62 @@
+.navbar {
+    width: 100%;
+    margin-left: 10pc;
+}
+.navbarScroll {
+    width: 100%;
+    border: 0;
+}
+
+.home {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.search {
+    width: 20%;
+    margin-left:10px;
+    margin-right: 10pc;
+    border-radius: 180%;
+    border-color: rgb(56, 52, 52);
+}
+
+.details {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* for small devices */
+/* 
+/* 
+ */
+
+.navbar-mob {
+    margin-left: 1px;
+}
+.logo-mob {
+    width: 40px;
+    margin-left: 0%;
+}
+
+.navbarScroll-mob {
+    width: auto;
+}
+
+.home-mob {
+    width: fit-content;
+}
+
+.search-mob {
+    width: 20%;
+    margin-left:10px;
+    margin-right: 10pc;
+    border-radius: 180%;
+    border-color: rgb(87, 78, 78);
+}
+.align-mob {
+    width: 200px;
+}
+
+.searchArea-mob {
+    width: 160px;
+}
