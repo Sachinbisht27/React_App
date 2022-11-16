@@ -4,7 +4,6 @@
 }
 .navbarScroll {
     width: 100%;
-    border: 0;
 }
 
 .home {
@@ -15,7 +14,7 @@
 .search {
     width: 20%;
     margin-left:10px;
-    margin-right: 10pc;
+    margin-right: 170px;
     border-radius: 180%;
     border-color: rgb(56, 52, 52);
 }
@@ -26,16 +25,12 @@
 }
 
 /* for small devices */
-/* 
-/* 
- */
 
 .navbar-mob {
     margin-left: 1px;
 }
 .logo-mob {
     width: 40px;
-    margin-left: 0%;
 }
 
 .navbarScroll-mob {
@@ -49,7 +44,6 @@
 .search-mob {
     width: 20%;
     margin-left:10px;
-    margin-right: 10pc;
     border-radius: 180%;
     border-color: rgb(87, 78, 78);
 }
