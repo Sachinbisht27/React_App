@@ -56,7 +56,7 @@ function NavBar() {
                    Sale
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#" >
+                <NavDropdown.Item href="#">
                   Profit
                 </NavDropdown.Item>
               </NavDropdown>
