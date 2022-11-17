@@ -42,36 +42,36 @@ function NavBar() {
   } else {
     return (
       <>
-        <Navbar expand="lg">
-          <Container fluid>
-            <Navbar.Brand href="#"><img src="logo192.png" width="40" height="40"></img></Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav className="navbarScroll" >
-                <Nav.Link href="#" className="home">Home</Nav.Link>
-                <Nav.Link href='/addformdetails'>Product</Nav.Link>
-                <NavDropdown className="details" title="Details" id="navbarScrollingDropdown">
-                  <NavDropdown.Item href="#">INFO</NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    Sale
-                  </NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href="#">
-                    Profit
-                  </NavDropdown.Item>
-                </NavDropdown>
-                <Nav.Link href="#">
-                  Add Product
-                </Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-              <Form className="d-flex ">
-                <Form.Control className="searchArea" type="search"placeholder="Search" aria-label="Search">
-                </Form.Control>
-                <button className='search' ><FontAwesomeIcon icon={faSearch}/></button>
-              </Form>
-          </Container>
-        </Navbar>
+      <Navbar expand="lg">
+        <Container fluid>
+          <Navbar.Brand href="#"><img src="logo192.png" width="40" height="40"></img></Navbar.Brand>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="navbarScroll" >
+              <Nav.Link href="#" className="home"class="nav-link nav-link-ltr">Home</Nav.Link>
+              <Nav.Link href="#" class="nav-link nav-link-ltr">Product</Nav.Link>
+              <NavDropdown className="details" title="Details" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#">INFO</NavDropdown.Item>
+                <NavDropdown.Item href="#">
+                   Sale
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#" >
+                  Profit
+                </NavDropdown.Item>
+              </NavDropdown>
+              <Nav.Link href="#" class="nav-link nav-link-ltr">
+                Add Product
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+            <Form className="d-flex ">
+              <Form.Control className="searchArea" type="search"placeholder="Search" aria-label="Search">
+              </Form.Control>
+              <button className='search' ><FontAwesomeIcon icon={faSearch}/></button>
+            </Form>
+        </Container>
+      </Navbar>
       </>
     );
   }
