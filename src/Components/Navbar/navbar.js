@@ -49,19 +49,19 @@ function NavBar() {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="navbarScroll" >
-              <Nav.Link href="#" className="home">Home</Nav.Link>
-              <Nav.Link href="#">Product</Nav.Link>
+              <Nav.Link href="#" className="home"class="nav-link nav-link-ltr">Home</Nav.Link>
+              <Nav.Link href="#" class="nav-link nav-link-ltr">Product</Nav.Link>
               <NavDropdown className="details" title="Details" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#">INFO</NavDropdown.Item>
                 <NavDropdown.Item href="#">
                    Sale
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#">
+                <NavDropdown.Item href="#" >
                   Profit
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#">
+              <Nav.Link href="#" class="nav-link nav-link-ltr">
                 Add Product
               </Nav.Link>
             </Nav>
