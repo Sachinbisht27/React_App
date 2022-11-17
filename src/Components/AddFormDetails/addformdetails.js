@@ -1,9 +1,7 @@
 import "../Footer/footer.css";
 import "../Navbar/navbar.css";
 import { useMediaQuery } from "react-responsive";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import { Container , Col} from "react-bootstrap";
+import { Container , Col ,Form , Button } from "react-bootstrap";
 import "../AddFormDetails/addformdetails.css";
 
 function AddformDetails() {
@@ -39,7 +37,7 @@ function AddformDetails() {
   } else {
     return (
       <>
-        <img  className="d-block mx-auto imgwidth" src="logo192.png"></img>
+        <img  className="d-block mx-auto imgWidth" src="logo192.png"></img>
         <Col className="d-flex justify-content-center ">
           <Form>
             <Form.Group controlId="formBasicEmail">

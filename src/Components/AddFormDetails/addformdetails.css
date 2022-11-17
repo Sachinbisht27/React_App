@@ -1,4 +1,4 @@
-.imgwidth{
+.imgWidth{
     margin-top: 80px;
     width: 45px;
     height: 50px;
@@ -22,6 +22,7 @@
     margin-left: 20px;
     margin-top: 10px;
 }
+
 .signup-mob{
     background-color:rgb(23, 104, 23);
     width: 285px;
