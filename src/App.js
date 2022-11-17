@@ -8,11 +8,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <HomePage />
-      <Footer />
       <Routes>
-        <Route path="/addformdetails" element={<AddformDetails/>}>Tab</Route>
+        <Route path="/" element={<HomePage/>} ></Route>
+        <Route path="addformdetails" element={<AddformDetails/>}></Route>
       </Routes>
+      <Footer/>
     </>
   );
 }

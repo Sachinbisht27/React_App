@@ -49,7 +49,7 @@ function NavBar() {
             <Navbar.Collapse id="navbarScroll">
               <Nav className="navbarScroll" >
                 <Nav.Link href="#" className="home">Home</Nav.Link>
-                <Nav.Link href="#">Product</Nav.Link>
+                <Nav.Link href='/addformdetails'>Product</Nav.Link>
                 <NavDropdown className="details" title="Details" id="navbarScrollingDropdown">
                   <NavDropdown.Item href="#">INFO</NavDropdown.Item>
                   <NavDropdown.Item href="#">
