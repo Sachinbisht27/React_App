@@ -1,4 +1,4 @@
-import { Container,Form ,NavDropdown, Navbar, Nav,  } from 'react-bootstrap';
+import { Container,Form ,NavDropdown, Navbar, Nav, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { useMediaQuery } from 'react-responsive'
@@ -41,16 +41,15 @@ function NavBar() {
     );
   } else {
     return (
-
       <>
       <Navbar expand="lg">
-        <Container fluid>
+        <Container fluid className='rotate'>
           <Navbar.Brand href="#"><img src="logo192.png" width="40" height="40"></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="navbarScroll" >
-              <Nav.Link href="#" className="home nav-link nav-link-ltr">Home</Nav.Link>
-              <Nav.Link href="#" className="nav-link nav-link-ltr">Product</Nav.Link>
+              <Nav.Link href="/" className="home nav-link nav-link-ltr">Home</Nav.Link>
+              <Nav.Link href="" className="nav-link nav-link-ltr">Product</Nav.Link>
               <NavDropdown className="details" title="Details" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#">INFO</NavDropdown.Item>
                 <NavDropdown.Item href="#">
@@ -66,11 +65,13 @@ function NavBar() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-            <Form className="d-flex ">
+            <Form className="d-flex w-30">
               <Form.Control className="searchArea" type="search"placeholder="Search" aria-label="Search">
               </Form.Control>
-              <button className='search' ><FontAwesomeIcon icon={faSearch}/></button>
             </Form>
+              <button className='search' ><FontAwesomeIcon icon={faSearch}/></button>
+            <Button href="" className="">Log In</Button>
+            <Button href="/addformdetails" className="">Sign Up</Button>
         </Container>
       </Navbar>
       </>
