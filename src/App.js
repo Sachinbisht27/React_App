@@ -10,6 +10,7 @@ import "../src/App.css";
 function App() {
   return (
     <>
+    <div className="background">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage/>} ></Route>
@@ -17,6 +18,7 @@ function App() {
         <Route path="signuppagecontent" element={<SignupPageContent/>}></Route>
       </Routes>
       <Footer/>
+      </div>
     </>
   );
 }
