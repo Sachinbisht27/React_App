@@ -2,9 +2,9 @@ import "../Footer/footer.css";
 import "../Navbar/navbar.css";
 import { useMediaQuery } from "react-responsive";
 import { Container, Col, Form, Button } from "react-bootstrap";
-import "../AddFormDetails/addformdetails.css";
+import "./loginpagecontent.css";
 
-function AddformDetails() {
+function LoginPageContent() {
   const isSmall = useMediaQuery({ query: "(max-width: 576px)" });
   if (isSmall) {
     return (
@@ -69,4 +69,4 @@ function AddformDetails() {
     );
   }
 }
-export default AddformDetails;
+export default LoginPageContent;

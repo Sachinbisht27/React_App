@@ -95,10 +95,10 @@ function NavBar() {
             <button className="search">
               <FontAwesomeIcon icon={faSearch} />
             </button>
-            <Button href="" className="">
+            <Button href="/loginpagecontent" className="">
               Log In
             </Button>
-            <Button href="/addformdetails" className="">
+            <Button href="/signuppagecontent" className="">
               Sign Up
             </Button>
           </Container>
