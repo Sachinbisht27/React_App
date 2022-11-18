@@ -1,7 +1,7 @@
 import "../Footer/footer.css";
 import "../Navbar/navbar.css";
 import { useMediaQuery } from "react-responsive";
-import { Container , Col ,Form , Button } from "react-bootstrap";
+import { Container, Col, Form, Button } from "react-bootstrap";
 import "../AddFormDetails/addformdetails.css";
 
 function AddformDetails() {
@@ -10,11 +10,16 @@ function AddformDetails() {
     return (
       <>
         <Container>
-        <img  className="imgwidth-mob" src="logo192.png" width="40" height="40"></img>
+          <img
+            className="imgwidth-mob"
+            src="logo192.png"
+            width="40"
+            height="40"
+          ></img>
           <Form>
-            <Form.Group  controlId="formBasicEmail">
+            <Form.Group controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control  type="email" placeholder="Enter email" />
+              <Form.Control type="email" placeholder="Enter email" />
               <Form.Text>
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -37,7 +42,7 @@ function AddformDetails() {
   } else {
     return (
       <>
-        <img  className="d-block mx-auto imgWidth" src="logo192.png"></img>
+        <img className="d-block mx-auto imgWidth" src="logo192.png"></img>
         <Col className="d-flex justify-content-center ">
           <Form>
             <Form.Group controlId="formBasicEmail">
