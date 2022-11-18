@@ -39,7 +39,8 @@
 
 .background{
   background-image: url("../src/img/background.png");
-  height: 680px;
+  height: 745px;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
