@@ -4,18 +4,13 @@ import HomePage from "../src/Components/Homepage/homepage";
 import { Routes, Route } from "react-router-dom";
 import LoginPageContent from "../src/Components/LogInPageContent/loginpagecontent";
 import SignupPageContent from "../src/Components/SignUpPageContent/signuppagecontent";
-import background from "../src/img/background.png";
+import "../src/App.css";
+
 
 function App() {
   return (
     <>
-      <div
-        style={{
-          backgroundImage: `url(${background})`,
-          height: "680px",
-          backgroundSize: "round",
-          backgroundRepeat: "no-repeat",
-        }}
+      <div className="background"
       >
         <NavBar />
         <Routes>
@@ -31,6 +26,5 @@ function App() {
     </>
   );
 }
-// }
 
 export default App;
