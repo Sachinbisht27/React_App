@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+<<<<<<< Updated upstream
+=======
+
+.background{
+  background-image: url("../src/img/background.png");
+  height: 745px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+>>>>>>> Stashed changes
