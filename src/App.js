@@ -13,10 +13,8 @@ function App() {
         style={{
           backgroundImage: `url(${background})`,
           height: "680px",
-          // width:"2000px",
           backgroundSize: "round",
           backgroundRepeat: "no-repeat",
-          // marginBottom: "200px"
         }}
       >
         <NavBar />
