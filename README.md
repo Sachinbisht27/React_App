@@ -1,4 +1,4 @@
-## PRODUCTS
+# PRODUCTS
 
 ### Introduction
 
