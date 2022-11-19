@@ -18,7 +18,7 @@ Before you start following the guidelines, make sure to go through the [prerequi
    ```
 
 
-8. Run Server
+4. Run Server
     ```sh
     npm run start
     ```
