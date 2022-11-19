@@ -1,6 +1,7 @@
 .navbar {
     width: auto;
-    margin-left: 150px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .navbarScroll {
@@ -15,14 +16,63 @@
 .search {
     width: 3%;
     margin-left:10px;
-    margin-right: 170px;
+    margin-right: 30px;
     border-radius: 180%;
-    border-color: rgb(56, 52, 52);
+    border-color: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.1);
+    font-weight: bold;
+    font-family: helvetica, arial, sans-serif;
+}
+
+.searchArea {
+    background: rgba(0,0,0,0.1);
+    color:rgba(0,0,0,0.8);
+}
+
+.searchArea:hover {
+    background: rgba(0,0,0,0.1);
+    color:rgba(0,0,0,0.8);
 }
 
 .details {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.nav-login {
+    padding: 6px 8px;
+    border-radius: 3px;
+    color:rgba(0,0,0,0.4);
+    font-weight: bold;
+    border: none;
+    margin: 0;
+    background: rgba(0,0,0,0.2);
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12pt;
+    margin-right: 10px;
+}
+
+.nav-login:hover {
+    background: rgba(0,0,0,0.4); 
+    color:rgba(0,0,0,0.8);
+}
+
+.nav-signup {
+    padding: 6px 8px;
+    border-radius: 3px;
+    color:rgba(0,0,0,0.4);
+    font-weight: bold;
+    border: none;
+    margin: 0;
+    background: rgba(0,0,0,0.2);
+    font-family: helvetica, arial, sans-serif;
+    font-size: 12pt;
+    margin-right: 10px;
+}
+
+.nav-signup:hover {
+    background: rgba(0,0,0,0.4); 
+    color:rgba(0,0,0,0.8);
 }
 
 .nav-link {
