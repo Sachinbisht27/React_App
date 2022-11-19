@@ -8,7 +8,7 @@
 
 ### Prerequisites
 
-Check our [prerequisites](./docs/prerequisites.md) to get started.
+Check our [prerequisites](./docs/Prerequisites.md) to get started.
 
 ### Installation
 
