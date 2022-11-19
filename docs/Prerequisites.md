@@ -8,7 +8,7 @@ After you've successfully installed, you can verify the installation using:
 
 ```sh
 git --version
-    # git version 2.33.0.windows.2
+ # git version 2.33.0.windows.2
 ```
 ### 6. Nodejs :running:
  For (Windows, Ubuntu, macOS)
@@ -16,11 +16,11 @@ git --version
 After you've successfully installed, you can verify the installation using:
 ```sh
 npm -v
-    # output should be something like
-    # 6.14.15
+# output should be something like
+# 6.14.15
 node -v
-    #output should be somthing like
-    #v14.17.6
+#output should be somthing like
+#v14.17.6
 ```
 
 ## Learning :book:
