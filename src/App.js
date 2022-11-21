@@ -6,7 +6,6 @@ import LoginPageContent from "../src/Components/LogInPageContent/loginpageconten
 import SignupPageContent from "../src/Components/SignUpPageContent/signuppagecontent";
 import "../src/App.css";
 
-
 function App() {
   return (
     <>
