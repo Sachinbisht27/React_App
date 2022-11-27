@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import LoginPageContent from "../src/Components/LogInPageContent/loginpagecontent";
 import SignupPageContent from "../src/Components/SignUpPageContent/signuppagecontent";
 import "../src/App.css";
+import Products from "./Components/Products/products";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage/>} ></Route>
         <Route path="loginpagecontent" element={<LoginPageContent/>}></Route>
         <Route path="signuppagecontent" element={<SignupPageContent/>}></Route>
+        <Route path="products" element={<Products/>}></Route>
       </Routes>
       <Footer/>
       </div>
