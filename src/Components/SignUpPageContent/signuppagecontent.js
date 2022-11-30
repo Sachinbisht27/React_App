@@ -1,6 +1,8 @@
 import { useMediaQuery } from "react-responsive";
 import { Container, Col, Form, Button } from "react-bootstrap";
 import "./signuppagecontent.css";
+import axios from "axios";
+import react, { useState} from "react";
 
 
 function SignupPageContent() {
