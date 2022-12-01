@@ -61,7 +61,7 @@ function SignupPageContent() {
         <img className="d-block mx-auto signupimgWidth" src="logo192.png"></img>
         <h1 className="d-flex justify-content-center">Create Account</h1>
         <Col className="d-flex justify-content-center ">
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <Form.Group>
               <Form.Label>First Name</Form.Label>
               <Form.Control value={firstname} onChange={(e) => handleInputChange(e)} id="firstname" type="text" placeholder="First Name" />
