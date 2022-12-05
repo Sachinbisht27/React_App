@@ -1,30 +1,30 @@
-.imgWidth{
+.imgWidth {
     margin-top: 80px;
     width: 45px;
     height: 50px;
 }
 
-.signup{
-    background-color:rgb(23, 104, 23);
+.signup {
+    background-color: rgb(23, 104, 23);
     justify-content: center;
     width: 285px;
 }
 
 /* Css For Mobile */
 
-.imgwidth-mob{
+.imgwidth-mob {
     margin-top: 65px;
     margin-left: 140px;
 }
 
-.checkbox-mob{
+.checkbox-mob {
     width: 285px;
     margin-left: 20px;
     margin-top: 10px;
 }
 
-.signup-mob{
-    background-color:rgb(23, 104, 23);
+.signup-mob {
+    background-color: rgb(23, 104, 23);
     width: 285px;
     margin-left: 20px;
     margin-top: 10px;
