@@ -2,36 +2,35 @@ import { useMediaQuery } from "react-responsive";
 import { Container, Col, Form, Button } from "react-bootstrap";
 import "./signuppagecontent.css";
 import axios from "axios";
-import react, { useState} from "react";
+import react, { useState } from "react";
 
 
 function SignupPageContent() {
 
-  const [ firstname, setFirstName ] = useState(null);
-  const [ lastname, setLastName ] = useState(null);
-  const [ email, setEmail ] = useState(null);
-  const [ password, setPassword ] = useState(null);
-  const [ conpassword, setConPassword ] = useState(null);
+  const [firstname, setFirstName] = useState(null);
+  const [lastname, setLastName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [conpassword, setConPassword] = useState(null);
 
   const handleInputChange = (e) => {
-        const {id , value} = e.target;
-        if(id === "firstname"){
-            setFirstName(value);
-        }
-        if(id === "lastname"){
-            setLastName(value);
-        }
-        if(id === "email"){
-            setEmail(value);
-        }
-        if(id === "password"){
-            setPassword(value);
-        }
-        if(id === "conpassword"){
-            setConPassword(value);
-        }
-
+    const { id, value } = e.target;
+    if (id === "firstname") {
+      setFirstName(value);
     }
+    if (id === "lastname") {
+      setLastName(value);
+    }
+    if (id === "email") {
+      setEmail(value);
+    }
+    if (id === "password") {
+      setPassword(value);
+    }
+    if (id === "conpassword") {
+      setConPassword(value);
+    }
+  }
 
   const data = {firstname:firstname, lastname:lastname, email:email, password:password, conpassword:conpassword};
 
@@ -49,7 +48,7 @@ function SignupPageContent() {
   if (isSmall) {
     return (
       <>
-          {/* <img
+        {/* <img
             className="imgwidth-mob"
             src="logo192.png"
             width="40"
