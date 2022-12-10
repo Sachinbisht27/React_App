@@ -33,10 +33,12 @@ function SignupPageContent() {
 
     }
 
+  const data = {firstname:firstname, lastname:lastname, email:email, password:password, conpassword:conpassword};
+
   const handleSubmit  = () => {
     console.log(firstname,lastname,email,password,conpassword);
 
-    axios.post(`http://localhost:9010/signup`)
+    axios.post(`http://localhost:9010/signup`,JSON.stringify(data),{firstname, lastname, email, password, conpassword})
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -55,7 +57,7 @@ function SignupPageContent() {
           ></img> */}
       </>
     );
-  } else {
+  } else { 
     return (
       <>
         <img className="d-block mx-auto signupimgWidth" src="logo192.png"></img>

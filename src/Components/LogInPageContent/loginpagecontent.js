@@ -12,19 +12,21 @@ function LoginPageContent() {
   const [ password, setPassword ] = useState(null);
 
   const handleInputChange = (e) => {
-        const {id , value} = e.target;
-        if(id === "username"){
-            setUserName(value);
-        if(id === "password"){
-            setPassword(value);
-        }
+      const {id , value} = e.target;
+      if(id === "username"){
+          setUserName(value);
+      }
+      if(id === "password"){
+        setPassword(value);
     }
   }
+
+  const data = { username:username, password:password };
 
   const handleSubmit  = () => {
     console.log(username,password);
 
-    axios.post(`http://localhost:9010/login`)
+    axios.post(`http://localhost:9010/login`,JSON.stringify(data),{ username:username, password:password})
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -73,14 +75,14 @@ function LoginPageContent() {
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>User Name</Form.Label>
-              <Form.Control value={password} onChange={(e) => handleInputChange(e)} id="username" type="text" placeholder="Enter email" />
+              <Form.Control value={username} onChange={(e) => handleInputChange(e)} id="username" type="text" placeholder="Enter email" />
               <Form.Text>
                 We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+            <Form.Group>
+              <Form.Label>Create Password</Form.Label>
               <Form.Control value={password} onChange={(e) => handleInputChange(e)} id="password" type="password" placeholder="Password" />
             </Form.Group>
             <Form.Group controlId="formBasicCheckbox">
