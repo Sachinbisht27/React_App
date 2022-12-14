@@ -1,7 +1,11 @@
 .navbar {
-    width: auto;
-    margin-left: 80px;
-    margin-right: 80px;
+    background: white;
+    height: 90px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.logo{
+    margin-left: 40px;    
 }
 
 .navbarScroll {
@@ -25,8 +29,13 @@
 }
 
 .searchArea {
+<<<<<<< Updated upstream
     background: rgba(0, 0, 0, 0.1);
     color: rgba(0, 0, 0, 0.8);
+=======
+    margin-right: 20px;
+
+>>>>>>> Stashed changes
 }
 
 .searchArea:hover {
@@ -44,12 +53,17 @@
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.4);
     font-weight: bold;
-    border: none;
     margin: 0;
+<<<<<<< Updated upstream
     background: rgba(0, 0, 0, 0.2);
+=======
+    background:white;
+>>>>>>> Stashed changes
     font-family: helvetica, arial, sans-serif;
     font-size: 12pt;
     margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
 }
 
 .nav-login:hover {
@@ -62,12 +76,17 @@
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.4);
     font-weight: bold;
-    border: none;
     margin: 0;
+<<<<<<< Updated upstream
     background: rgba(0, 0, 0, 0.2);
+=======
+    background: white;
+>>>>>>> Stashed changes
     font-family: helvetica, arial, sans-serif;
     font-size: 12pt;
     margin-right: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
 }
 
 .nav-signup:hover {
@@ -77,12 +96,10 @@
 
 .nav-link {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: uppercase;
-    text-decoration: none;
     color: #031D44;
-    padding: 20px 0px;
-    margin: 0px 20px;
+    margin: 0px 10px;
     display: inline-block;
     position: relative;
     opacity: 0.75;
@@ -109,9 +126,13 @@
     width: 100%;
 }
 
+<<<<<<< Updated upstream
 .rotate {
     margin-right: 158px;
 }
+=======
+
+>>>>>>> Stashed changes
 
 /* for small devices */
 

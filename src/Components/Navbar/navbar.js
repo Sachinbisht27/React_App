@@ -51,10 +51,12 @@ function NavBar() {
     );
   } else {
     return (
-      <Navbar expand="lg">
-        <Container fluid className="rotate">
-          <Navbar.Brand href="#">
-            <img src="logo192.png" width="40" height="40"></img>
+      <Navbar 
+      className="navbar"
+      >
+        <Container>
+          <Navbar.Brand href="#" className="logo">
+            <img src="logo192.png" width="60" height="60"></img>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -91,15 +93,10 @@ function NavBar() {
               aria-label="Search"
             ></Form.Control>
           </Form>
-          <button className="search">
+          {/* <button className="search ">
             <FontAwesomeIcon icon={faSearch} />
-          </button>
-          <Button href="/loginpagecontent" className="nav-login">
-            Log In
-          </Button>
-          <Button href="/signuppagecontent" className="nav-signup">
-            Sign Up
-          </Button>
+          </button> */}
+          
         </Container>
       </Navbar>
     );
