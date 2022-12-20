@@ -1,31 +1,27 @@
 
-name: React test
+name: Continuous Integration (CI)
 
 on:
-  pull_request:
   push:
-    branches: [main]
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  buildAndTest:
-  name: Build and Test
+  build:
+
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
-      - uses: actions/checkout@v2
-
-      - name: setup node
-        uses: actions/setup-node@master
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      # install applicaion dependencies
-      - name: Install dependencies
-        run: |
-          npm install
-
-      # build and test the apps
-      - name: build
-        run: |
-          npm run build
-          npm test
-
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    - run: npm run build --if-present
+    - run: npm test
