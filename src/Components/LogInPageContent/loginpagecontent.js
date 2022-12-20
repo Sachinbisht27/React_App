@@ -4,34 +4,37 @@ import { useMediaQuery } from "react-responsive";
 import { Container, Col, Form, Button } from "react-bootstrap";
 import "./loginpagecontent.css";
 import axios from "axios";
-import react, { useState} from "react";
+import react, { useState } from "react";
 
 function LoginPageContent() {
-
-  const [ username, setUserName ] = useState(null);
-  const [ password, setPassword ] = useState(null);
+  const [username, setUserName] = useState(null);
+  const [password, setPassword] = useState(null);
 
   const handleInputChange = (e) => {
-      const {id , value} = e.target;
-      if(id === "username"){
-          setUserName(value);
-      }
-      if(id === "password"){
-        setPassword(value);
+    const { id, value } = e.target;
+    if (id === "username") {
+      setUserName(value);
     }
-  }
+    if (id === "password") {
+      setPassword(value);
+    }
+  };
 
-  const data = { username:username, password:password };
+  const data = { username: username, password: password };
 
-  const handleSubmit  = () => {
-    console.log(username,password);
+  const handleSubmit = () => {
+    console.log(username, password);
 
-    axios.post(`http://localhost:9010/login`,JSON.stringify(data),{ username:username, password:password})
-      .then(res => {
+    axios
+      .post(`http://localhost:9010/login`, JSON.stringify(data), {
+        username: username,
+        password: password,
+      })
+      .then((res) => {
         console.log(res);
         console.log(res.data);
-      })
-  }
+      });
+  };
 
   const isSmall = useMediaQuery({ query: "(max-width: 576px)" });
   if (isSmall) {
@@ -75,7 +78,13 @@ function LoginPageContent() {
           <Form onSubmit={handleSubmit}>
             <Form.Group controlId="formBasicEmail">
               <Form.Label>User Name</Form.Label>
-              <Form.Control value={username} onChange={(e) => handleInputChange(e)} id="username" type="text" placeholder="Enter email" />
+              <Form.Control
+                value={username}
+                onChange={(e) => handleInputChange(e)}
+                id="username"
+                type="text"
+                placeholder="Enter email"
+              />
               <Form.Text>
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -83,7 +92,13 @@ function LoginPageContent() {
 
             <Form.Group>
               <Form.Label>Create Password</Form.Label>
-              <Form.Control value={password} onChange={(e) => handleInputChange(e)} id="password" type="password" placeholder="Password" />
+              <Form.Control
+                value={password}
+                onChange={(e) => handleInputChange(e)}
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
             </Form.Group>
             <Form.Group controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="Check me out" />

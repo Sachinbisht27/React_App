@@ -4,9 +4,7 @@ import "./signuppagecontent.css";
 import axios from "axios";
 import react, { useState } from "react";
 
-
 function SignupPageContent() {
-
   const [firstname, setFirstName] = useState(null);
   const [lastname, setLastName] = useState(null);
   const [email, setEmail] = useState(null);
@@ -30,19 +28,32 @@ function SignupPageContent() {
     if (id === "conpassword") {
       setConPassword(value);
     }
-  }
+  };
 
-  const data = {firstname:firstname, lastname:lastname, email:email, password:password, conpassword:conpassword};
+  const data = {
+    firstname: firstname,
+    lastname: lastname,
+    email: email,
+    password: password,
+    conpassword: conpassword,
+  };
 
-  const handleSubmit  = () => {
-    console.log(firstname,lastname,email,password,conpassword);
+  const handleSubmit = () => {
+    console.log(firstname, lastname, email, password, conpassword);
 
-    axios.post(`http://localhost:9010/signup`,JSON.stringify(data),{firstname, lastname, email, password, conpassword})
-      .then(res => {
+    axios
+      .post(`http://localhost:9010/signup`, JSON.stringify(data), {
+        firstname,
+        lastname,
+        email,
+        password,
+        conpassword,
+      })
+      .then((res) => {
         console.log(res);
         console.log(res.data);
-      })
-  }
+      });
+  };
 
   const isSmall = useMediaQuery({ query: "(max-width: 576px)" });
   if (isSmall) {
@@ -56,7 +67,7 @@ function SignupPageContent() {
           ></img> */}
       </>
     );
-  } else { 
+  } else {
     return (
       <>
         <img className="d-block mx-auto signupimgWidth" src="logo192.png"></img>
@@ -65,27 +76,56 @@ function SignupPageContent() {
           <Form onSubmit={handleSubmit}>
             <Form.Group>
               <Form.Label>First Name</Form.Label>
-              <Form.Control value={firstname} onChange={(e) => handleInputChange(e)} id="firstname" type="text" placeholder="First Name" />
+              <Form.Control
+                value={firstname}
+                onChange={(e) => handleInputChange(e)}
+                id="firstname"
+                type="text"
+                placeholder="First Name"
+              />
             </Form.Group>
 
             <Form.Group>
               <Form.Label>Last Name</Form.Label>
-              <Form.Control value={lastname} onChange={(e) => handleInputChange(e)} id="lastname" type="text" placeholder="Last Name" />
+              <Form.Control
+                value={lastname}
+                onChange={(e) => handleInputChange(e)}
+                id="lastname"
+                type="text"
+                placeholder="Last Name"
+              />
             </Form.Group>
             <Form.Group>
               <Form.Label>Email address</Form.Label>
-              <Form.Control value={email} onChange={(e) => handleInputChange(e)} id="email" type="email" placeholder="Enter email" />
+              <Form.Control
+                value={email}
+                onChange={(e) => handleInputChange(e)}
+                id="email"
+                type="email"
+                placeholder="Enter email"
+              />
               <Form.Text>
                 We'll never share your email with anyone else.
               </Form.Text>
             </Form.Group>
             <Form.Group>
               <Form.Label>Create Password</Form.Label>
-              <Form.Control value={password} onChange={(e) => handleInputChange(e)} id="password" type="password" placeholder="Password" />
+              <Form.Control
+                value={password}
+                onChange={(e) => handleInputChange(e)}
+                id="password"
+                type="password"
+                placeholder="Password"
+              />
             </Form.Group>
             <Form.Group>
               <Form.Label>Confirm Password</Form.Label>
-              <Form.Control value={conpassword} onChange={(e) => handleInputChange(e)} id="conpassword" placeholder="Password" />
+              <Form.Control
+                value={conpassword}
+                onChange={(e) => handleInputChange(e)}
+                id="conpassword"
+                placeholder="Password"
+              />
             </Form.Group>
             <Button className="createacc" type="submit">
               Create Account
